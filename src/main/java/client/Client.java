@@ -3,16 +3,14 @@ package client;
 import java.io.*;
 import java.net.InetAddress;
 import java.net.Socket;
-import java.net.UnknownHostException;
 
-import static java.lang.Thread.sleep;
 
 /**
  * Created by igladush on 04.03.16.
  */
 public class Client {
     private final String BUY = "Buy";
-    BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
+    private BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
 
     public void runClient(int serverPort, String address) {
 
